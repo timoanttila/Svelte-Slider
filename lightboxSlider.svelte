@@ -84,9 +84,6 @@
 		font-size: 1.2rem
 	}
 
-	.arrow,
-	button.del { background-color: transparent }
-
 	#overlay .arrow {
 		top: 0;
 		width: 70px;
