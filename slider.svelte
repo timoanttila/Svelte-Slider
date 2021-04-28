@@ -16,9 +16,11 @@
 	}
 </script>
 
-<img class="bgw" src={images[activeImage]} alt={title}/>
-<button class="arrow arrowLeft" on:click={() => changeImg(1)}>&lsaquo;</button>
-<button class="arrow arrowRight" on:click={() => changeImg(2)}>&rsaquo;</button>
+<div class="slider rel">
+	<img class="bgw" src={images[activeImage]} alt={title}/>
+	<button class="arrow arrowLeft" on:click={() => changeImg(1)}>&lsaquo;</button>
+	<button class="arrow arrowRight" on:click={() => changeImg(2)}>&rsaquo;</button>
+</div>
 
 <style>
 	.arrow {
@@ -28,7 +30,8 @@
 		top: 0;
 		width: 70px;
 		height: 100%;
-		font-size: 7rem
+		font-size: 7rem;
+		border: 0
 	}
 
 	.arrowLeft { left: 0 }
