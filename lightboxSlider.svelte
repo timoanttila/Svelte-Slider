@@ -1,6 +1,5 @@
 <script>
 	export let images;
-	export let title;
 
 	$: activeImage = 0;
 	let active;
@@ -27,7 +26,7 @@
 	{#if active}
 		<div id="overlay" class="grid cell">
 			<div id="overlayImage" class="rel">
-				<img class="bgw" src={images[activeImage]} alt={title}/>
+				<img class="bgw" src={images[activeImage].image} alt={images[activeImage].alt}/>
 				<button class="abs arrow arrowLeft white noBor" on:click={() => changeImg(1)}>&lsaquo;</button>
 				<button class="abs arrow arrowRight white noBor" on:click={() => changeImg(2)}>&rsaquo;</button>
 				<button id="close" class="abs bold bgw" on:click={() => (active = '')}>X</button>
