@@ -1,5 +1,5 @@
 <script>
-  import Gallery from './gallery.svelte';
+  import Gallery from './lightboxSlider.svelte';
   let images = [
     {
       image: "https://timoanttila.com/images/gallery/2018-deli-rumakuru-lapland.webp",
