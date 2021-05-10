@@ -1,6 +1,5 @@
 <script>
 	export let images;
-	export let title;
 
 	$: activeImage = 0;
 
@@ -17,7 +16,7 @@
 </script>
 
 <div class="slider rel">
-	<img class="bgw" src={images[activeImage]} alt={title}/>
+	<img class="bgw" src={images[activeImage].image} alt={images[activeImage].alt}/>
 	<button class="arrow arrowLeft" on:click={() => changeImg(1)}>&lsaquo;</button>
 	<button class="arrow arrowRight" on:click={() => changeImg(2)}>&rsaquo;</button>
 </div>
