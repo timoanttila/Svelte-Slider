@@ -11,7 +11,7 @@
 	}
 
 	function changeImg(e) {
-		let i = $data.img.length;
+		let i = images.length;
 		if (e == 1) {
 			if (activeImage == 0) activeImage = i - 1;
 			else activeImage -= 1;
