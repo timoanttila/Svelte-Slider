@@ -13,6 +13,10 @@
 			else activeImage += 1;
 		}
 	}
+
+	setInterval(() => {
+		changeImg(1);
+	}, 3000);
 </script>
 
 <div class="slider rel">
